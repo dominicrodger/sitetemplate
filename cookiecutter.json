@@ -1,0 +1,15 @@
+{
+    "db_password": "youshouldnotusethis",
+    "domain": "example.com",
+    "email_address": "hello@example.com",
+    "email_host": "smtp.example.com",
+    "email_password": "example",
+    "email_port": 25,
+    "email_username": "example",
+    "opbeat_app_id": "youshouldnotusethis",
+    "opbeat_organization_id": "youshouldnotusethis",
+    "opbeat_secret_token": "youshouldnotusethis",
+    "project_name": "example",
+    "root_app": "example_app",
+    "secret_key": "youshouldnotusethis"
+}
