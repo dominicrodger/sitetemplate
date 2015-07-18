@@ -1,5 +1,6 @@
 {
     "db_password": "youshouldnotusethis",
+    "deployment_user": "deploy",
     "domain": "example.com",
     "email_address": "hello@example.com",
     "email_host": "smtp.example.com",
@@ -11,5 +12,7 @@
     "opbeat_secret_token": "youshouldnotusethis",
     "project_name": "example",
     "root_app": "example_app",
+    "root_app_path": "git+https://github.com/dominicrodger/example.git#egg=example",
+    "ssh_path": "yourhost",
     "secret_key": "youshouldnotusethis"
 }
