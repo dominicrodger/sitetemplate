@@ -9,7 +9,6 @@ virtualenv /var/www/{{ cookiecutter.domain }}/.venv
 source /var/www/{{ cookiecutter.domain }}/.venv
 pip install opbeat
 pip install psycopg2
-pip install {{ cookiecutter.root_app_path }}
 
 
 cd /var/www/{{ cookiecutter.domain }}
