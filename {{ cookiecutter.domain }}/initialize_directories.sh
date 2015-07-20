@@ -3,6 +3,9 @@ set -o errexit
 set -o nounset
 set -o xtrace
 
+# Making a staging area to put files in
+mkdir ~/{{ cookiecutter.domain }}
+
 # Set up our site root directory, and make sure we can write to it
 # without being root.
 sudo mkdir /var/www/{{ cookiecutter.domain }}
