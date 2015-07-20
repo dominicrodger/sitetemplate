@@ -1,17 +1,17 @@
 """
-Django settings for {{ domain }} project.
+Django settings for {{ cookiecutter.domain }} project.
 """
 
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = '{{ secret_key }}'
+SECRET_KEY = '{{ cookiecutter.secret_key }}'
 
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '{{ domain }}',
+    '{{ cookiecutter.domain }}',
 ]
 
 INSTALLED_APPS = (
@@ -60,9 +60,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'HOST': 'localhost',
-        'NAME': '{{ project_name }}',
-        'USER': '{{ project_name }}',
-        'PASSWORD': '{{ db_password }}'
+        'NAME': '{{ cookiecutter.project_name }}',
+        'USER': '{{ cookiecutter.project_name }}',
+        'PASSWORD': '{{ cookiecutter.db_password }}'
     }
 }
 
@@ -72,22 +72,22 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-STATIC_URL = 'https://static.{{ domain }}/'
+STATIC_URL = 'https://static.{{ cookiecutter.domain }}/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-MEDIA_URL = 'https://media.{{ domain }}/'
+MEDIA_URL = 'https://media.{{ cookiecutter.domain }}/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = '{{ email_host }}'
-EMAIL_HOST_USER = '{{ email_username }}'
-EMAIL_HOST_PASSWORD = '{{ email_password }}'
-DEFAULT_FROM_EMAIL = '{{ email_address }}'
-EMAIL_PORT = {{ email_port }}
+EMAIL_HOST = '{{ cookiecutter.email_host }}'
+EMAIL_HOST_USER = '{{ cookiecutter.email_username }}'
+EMAIL_HOST_PASSWORD = '{{ cookiecutter.email_password }}'
+DEFAULT_FROM_EMAIL = '{{ cookiecutter.email_address }}'
+EMAIL_PORT = {{ cookiecutter.email_port }}
 
 OPBEAT = {
-    'ORGANIZATION_ID': '{{ opbeat_organization_id }}',
-    'APP_ID': '{{ opbeat_app_id }}',
-    'SECRET_TOKEN': '{{ opbeat_secret_token }}',
+    'ORGANIZATION_ID': '{{ cookiecutter.opbeat_organization_id }}',
+    'APP_ID': '{{ cookiecutter.opbeat_app_id }}',
+    'SECRET_TOKEN': '{{ cookiecutter.opbeat_secret_token }}',
 }
