@@ -6,7 +6,7 @@ set -o xtrace
 # Set up our site root directory, and make sure we can write to it
 # without being root.
 sudo mkdir /var/www/{{ cookiecutter.domain }}
-sudo chown -R {{ cookiecutter.deployment_user }}:{{ cookiecutter.deployment_user }} /var/www/{{ cookiecutter.domain }}
+sudo chown -R {{ cookiecutter.ssh_user }}:{{ cookiecutter.ssh_user }} /var/www/{{ cookiecutter.domain }}
 
 # Set up the media directory, and make sure the www-data user can
 # write to it.
