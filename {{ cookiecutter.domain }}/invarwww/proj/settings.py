@@ -11,7 +11,7 @@ SECRET_KEY = '{{ cookiecutter.secret_key }}'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '{{ cookiecutter.domain }}',
+    'www.{{ cookiecutter.domain }}',
 ]
 
 INSTALLED_APPS = (
