@@ -83,5 +83,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = '{{ cookiecutter.email_host }}'
 EMAIL_HOST_USER = '{{ cookiecutter.email_username }}'
 EMAIL_HOST_PASSWORD = '{{ cookiecutter.email_password }}'
-DEFAULT_FROM_EMAIL = '{{ cookiecutter.email_address }}'
+DEFAULT_FROM_EMAIL = '{{ cookiecutter.email_default_from }}'
 EMAIL_PORT = {{ cookiecutter.email_port }}
