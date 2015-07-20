@@ -85,9 +85,3 @@ EMAIL_HOST_USER = '{{ cookiecutter.email_username }}'
 EMAIL_HOST_PASSWORD = '{{ cookiecutter.email_password }}'
 DEFAULT_FROM_EMAIL = '{{ cookiecutter.email_address }}'
 EMAIL_PORT = {{ cookiecutter.email_port }}
-
-OPBEAT = {
-    'ORGANIZATION_ID': '{{ cookiecutter.opbeat_organization_id }}',
-    'APP_ID': '{{ cookiecutter.opbeat_app_id }}',
-    'SECRET_TOKEN': '{{ cookiecutter.opbeat_secret_token }}',
-}
