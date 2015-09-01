@@ -41,9 +41,9 @@ set +o nounset # (https://github.com/pypa/virtualenv/issues/150)
 deactivate
 set -o nounset
 
-# Restart supervisor
-sudo service supervisor stop
-sudo service supervisor start
+# Reload supervisor configuration, and start processes
+sudo supervisorctl reread
+sudo supervisorctl add {{ cookiecutter.project_name }}
 
 # Configure nginx
 sudo ln -s /etc/nginx/sites-available/{{ cookiecutter.domain }} /etc/nginx/sites-enabled/
